@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nike Flex Sneakers - CeeTee Store</title>
+	<link rel="stylesheet" type="text/css" href="E-commerce.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="cart.js" async></script>
+</head>
+<body>
+
+<div>
+<div class="container">
+	<div class="navbar">
+		<a href="E-Commerce.html">
+		<div class="logo">
+			<img src="images/c333.png" width="130px" height="60px">
+		</div>
+		</a>
+
+		<nav class="topnav" id="mytopnav">
+				<a href="E-Commerce.html" target="_blank">Home</a>
+				<a href="product.html" class="active">Products</a>
+				<a href="about.html" target="_blank">About</a>
+				<a href="account.html" target="_blank">Account</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
+		</nav>
+
+	</div>
+
+</div>
+</div>
+
+<!----- Cart Item Details ------>
+<div class="small-container cart-page">
+
+	<table>
+		<tr>
+			<th>Product</th>
+			<th>Quantity</th>
+			<th>Price</th>
+		</tr>
+
+	<div class="cart-one">
+		<tr>
+		<div class="cart-head">
+			<td>
+				<div class="cart-info">
+					<img src="images/c40.PNG" >
+					<div>
+						<h4>Nike Dunk Low "Cork"</h4>
+						<small>Price: N45,000.00</small>
+						<br>
+						<button class="btn-danger">Remove</button>
+					</div>
+				</div>
+
+			</td>
+			<td class="cart-quantity"><input type="number" value="1"></td>
+			<td class="cart-price">45,000.00</td>
+		</div>
+		</tr>
+
+		<tr>
+		<div class="cart-head">
+			<td>
+				<div class="cart-info">
+					<img src="images/c18.PNG" >
+					<div>
+						<h4>Classic Designer Fendi Boot</h4>
+						<small>Price: N30,000.00</small>
+						<br>
+						<button class="btn-danger">Remove</button>
+					</div>
+				</div>
+
+			</td>
+			<td class="cart-quantity"><input type="number" value="2"></td>
+			<td class="cart-price">30,000.00</td>
+		</div>
+		</tr>
+
+		<tr>
+		<div class="cart-head">
+			<td>
+				<div class="cart-info">
+					<img src="images/c350.PNG" >
+					<div>
+						<h4>Nike Flex Sneakers</h4>
+						<small>Price: N30,000.00</small>
+						<br>
+						<button class="btn-danger">Remove</button>
+					</div>
+				</div>
+
+			</td>
+			<td class="cart-quantity"><input type="number" value="1"></td>
+			<td class="cart-price">30,000.00</td>
+		</div>
+		</tr>
+
+		<tr>
+		<div class="cart-head">
+			<td>
+				<div class="cart-info">
+					<img src="images/c17.PNG" >
+					<div>
+						<h4>Top Quality Blue Denim Jean</h4>
+						<small>Price: N15,000.00</small>
+						<br>
+						<button class="btn-danger">Remove</button>
+					</div>
+				</div>
+
+			</td>
+			<td class="cart-quantity"><input type="number" value="3"></td>
+			<td class="cart-price">15,000.00</td>
+		</div>
+		</tr>
+	</div>
+	
+	</table>
+
+	<div class="total-price">
+		<table>
+			<tr>
+				<td>SubTotal</td>
+				<td>N250,000.00</td>
+			</tr>
+
+			<tr>
+				<td>General Delivery Fee</td>
+				<td>N5,000.00</td>
+			</tr>
+
+			<tr class="total">
+				<td>Total</td>
+				<td>N255,000.00</td>
+			</tr>
+
+		</table>
+	</div>
+
+</div>
+
+
+
+<!------- footer ------->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col1">
+					<h3>Download Our App</h3>
+					<p>Download App for Android and ios Mobile phone.</p>
+					<div class="logo">
+						<img src="images/logo2.jpg">
+						<img src="images/logo1.jpg">
+					</div>
+				</div>
+				<div class="footer-col2">
+					<img src="images/c33.png" width="220px" height="110px">
+					<h4>Our Purpose is to Unleash your unique style whenever you shop with us.</h4>
+				</div>
+				<div class="footer-col3">
+					<h3>Useful Links</h3>
+					<ul>
+						<li>Coupons</li>
+						<li>Blog Post</li>
+						<li>Return Policy</li>
+						<li>Join Affiliate</li>
+					</ul>
+				</div>
+				<div class="footer-col4">
+					<h3>Follow Us</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>TikTok</li>
+						<li>Instagram</li>
+						<li>Twitter</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">Copyright 2023 - Cypher</p>
+		</div>		
+	</div>
+
+<!------- js for media query ------->
+
+
+<script>
+		function myFunction() {
+  var x = document.getElementById("mytopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  	} else {
+    x.className = "topnav";
+  	}
+	}
+
+</script>
+
+
+
+
+</body>
+</html>

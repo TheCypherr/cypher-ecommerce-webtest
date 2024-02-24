@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <title>Your Website</title>
+</head>
+<body>
+    <header id="homepage-header">
+        <!-- Homepage Header Content -->
+        <h1>Welcome to Your Website</h1>
+    </header>
+    
+    <header id="page-header">
+        <!-- Page Header Content -->
+        <h1>Page Title</h1>
+    </header>
+
+    <!-- Your page content here -->
+
+    <script src="script.js">
+        
+        // Function to switch to the homepage header
+function showHomepageHeader() {
+    document.getElementById("homepage-header").style.display = "block";
+    document.getElementById("page-header").style.display = "none";
+}
+
+// Function to switch to the page header
+function showPageHeader() {
+    document.getElementById("homepage-header").style.display = "none";
+    document.getElementById("page-header").style.display = "block";
+}
+
+// Check the current page and switch the header accordingly
+window.addEventListener("load", function () {
+    // You can check the current page URL or any other criteria here
+    // For this example, we'll use a simulated variable to determine the current page
+    const isHomepage = true; // Change this to false for other pages
+
+    if (isHomepage) {
+        showHomepageHeader();
+    } else {
+        showPageHeader();
+    }
+});
+
+        
+    </script>
+</body>
+</html>
+
+
+
+<div class="row">
+        <div class="col4">
+            <img src="images/c27.png">
+            <h4>Comfy Quality Hermes Slide</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <h5>N25,000</h5>
+        </div>
+
+        <div class="col4">
+            <img src="images/c15.png">
+            <h4>Original Gucci Sandals</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <h5>N45,000</h5>
+        </div>
+
+        <div class="col4">
+            <img src="images/c21.png">
+            <h4>Top Quality Reebok Sneakers</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <h5>N65,000</h5>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+        <div class="col2">
+            <img src="images/c15.png" width="100%" id="ProductImg">
+
+        </div>
+
+        <div class="col2">
+            <a href="E-Commerce.html"><h4>Home / Sneakers</h4></a>
+            <h1>Original Gucci Sandals</h1>
+            <h4>N45,000</h4>
+            <select>
+                <option>Select Size</option>
+                <option>31-33</option>
+                <option>33-35</option>
+                <option>35-37</option>
+                <option>37-41</option>
+                <option>41-45</option>
+            </select>
+            <input type="number" value="1">
+            <a href="cart.html" class="btn">Add To Cart</a>
+
+            <h3>Product Details <i class="fa fa-indent"></i></h3>
+            <br>
+            <h5>Top Quality Gucci Sandals. Very comfy and fashionable.</h5>
+        </div>
+</div>
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #8B0000;
+    border-radius: 10px;
+}
+
+.topnav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-align: center;
+    width: 100px;
+}
+
+
+
+
+
+
+
+<!----- Single Product Details ------>
+<div class="small-container single-product">
+    <table class="table">
+        <tr class="tablerow">
+            <th><h3>Item</h3></th>
+            <th><h3>Qty</h3></th>
+            <th><h3>Price</h3></th>
+        </tr>
+    
+        <tr class="tablerow">
+            <td>Original Gucci Sandal</td>
+            <td>1</td>
+            <td>N15,000</td>
+        </tr>
+
+        <tr class="tablerow">
+            <td>Balenciaga Face Cap</td>
+            <td>5</td>
+            <td>N60,000</td>
+        </tr>
+
+        <tr class="tablerow">
+            <td>White Gucci Quality Shirt</td>
+            <td>4</td>
+            <td>N80,000</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>Grand Total</td>
+            <td>N101,000</td>
+        </tr>
+
+    </table>
+
+</div>
